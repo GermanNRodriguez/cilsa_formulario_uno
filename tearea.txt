@@ -1,0 +1,12 @@
+Les proponemos diseñar un formulario que contenga los siguientes campos:
+Datos personales
+	- Nombre
+	- Apellido
+	- Email
+	- Fecha de nacimiento
+	- País de residencia
+Pueden maquetar el formulario y elegir su estilo aplicando dos CSS pensando en una
+presentación y en la misma presentación en alto contraste. 
+
+Sobre el ejercicio anterior te proponemos que puedas validar el formato del email cargado.
+Si no lo cumple, deberás informar al usuario. 

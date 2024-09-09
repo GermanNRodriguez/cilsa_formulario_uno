@@ -1,0 +1,193 @@
+:root
+{
+    --color-principal:rgb(132, 169, 212);
+    --color-secundario:rgb(225, 131, 170);
+    --color-error:rgb(230, 70, 70);
+}
+
+body, main
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+figure
+{
+    margin:0;
+    padding:0;
+
+}
+
+#contenedor_formulario
+{
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor_formulario_bkg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    object-position: center;
+
+    background: url(../img/bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(20px);
+    filter: saturate(1.75) blur(150px) invert(.1);
+}
+
+#contenedor_formulario_interno
+{
+    min-height: 250px;
+    
+    width: 50%;
+    min-width: 250px;
+    max-width: 400px;
+
+    background: rgb(255, 255, 255, .6);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6) 0%, rgba(217, 217, 217, 0.6) 35%, rgba(194, 194, 194, 0.6) 100%);
+    border-radius: .5rem;
+
+    overflow: hidden;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.items-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    /* margin: 0.5rem; */
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.content-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.item-form.item-medio {
+    flex: 1 0 150px;
+    width: 100%;
+}
+
+.item-form.item-completo {
+    width: 100%;
+}
+
+input.input-form,
+select.select-form {
+    width: -webkit-fill-available;
+    min-height: 2.5rem;
+    border: solid 1px rgb(0,0,0,25%);
+    border-radius: 5px;
+    padding: 0 0.5rem;
+}
+
+input.input-form:focus-visible, input.input-form:focus, input.input-form:target
+{
+    outline: none;
+    box-shadow: 0px -2px 0px 0px var(--color-principal) inset;
+    -webkit-box-shadow: 0px -2px 0px 0px var(--color-principal) inset;
+    -moz-box-shadow: 0px -2px 0px 0px var(--color-principal) inset;
+}
+
+.content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.content-img figure {
+    max-width: 100px;
+}
+
+.content-img figure img {
+    width: -webkit-fill-available;
+}
+
+.btn
+{
+    min-height: 2.5rem;
+    max-width: 150px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: .5rem 0;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+.btn-submit
+{
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color .5s, background .5s;
+}
+
+
+.btn-submit:hover
+{
+    color: #ffffff;
+    background-color: var(--color-principal);
+}
+
+.btn-submit:focus-visible, .btn-submit:focus, .btn-submit:target
+{
+    color: #ffffff;
+    background-color: var(--color-secundario);
+}
+
+#formulario_cilsa .content-img img {
+    filter: brightness(2);
+}
+
+span.form-error {
+    color: var(--color-error);
+    width: 100%;
+    display: none;
+}
+
+.item-form.error span.form-error
+{
+    display: block;
+}

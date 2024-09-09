@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta   
+            http-equiv="Content-Security-Policy" 
+            content="   default-src 'self'; 
+                        script-src * 'unsafe-eval' 'unsafe-inline' 'self'; 
+                        connect-src 'self' * blob: 'unsafe-inline' 'unsafe-eval'; 
+                        style-src 'self' 'unsafe-inline'; 
+                        img-src 'self' 'unsafe-eval'  'unsafe-inline' blob: data: ;
+                        frame-src 'self';
+                        font-src 'self';
+                        media-src * 'self' data:;"
+        >
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <meta name="description" content="Esto es una prueba para Dealshop">
+        <meta name="format-detection" content="telephone=yes">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <!-- Social Tags -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/vnd.icon" href="./assets/img/favicon/favicon.ico">
+
+        <!-- Css configuracion general del sitio -->
+        <link rel='stylesheet' async type="text/css" href='assets/css/index.css'>
+
+    </head>
+    <body>
+
+        <main id="index_main">
+
+            <section id="contenedor_formulario">
+                <div id="contenedor_formulario_bkg"></div>
+                <div id="contenedor_formulario_interno">
+                    <form id="formulario_cilsa" action="javascript:void(0);">
+                        <div class="items-form">
+                            <div class="content-items">
+                                <div class="item-form item-completo">
+                                    <div class="content-img">
+                                        <figure>
+                                            <img async loading="lazy" src="./assets/img/icons/user.png" alt="usuario">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-items">
+                                <div class="item-form item-medio">
+                                    <input type="text" class="input-form" id="form_nombre" name="nombre" placeholder="Nombre">
+                                    <span class="form-error">El nombre debe tener al menos 3 letras. Sin números.</span>
+                                </div>
+                                <div class="item-form item-medio">
+                                    <input type="text" class="input-form" id="form_apellido" name="apellido" placeholder="Apellido">
+                                    <span class="form-error">El apellido debe tener al menos 3 letras. Sin números.</span>
+                                </div>
+                                <div class="item-form item-medio">
+                                    <input type="text" class="input-form" id="form_email" name="email" placeholder="Email">
+                                    <span class="form-error">El email no corresponde a un formato existente.</span>
+                                </div>
+                                <div class="item-form item-medio">
+                                    <input type="date" class="input-form" id="form_fecha_nac" name="fecha_nac" placeholder="Fecha de nacimiento">
+                                    <span class="form-error">Debe insertar una fecha.</span>
+                                </div>
+                                <div class="item-form item-completo">
+                                    <select id="form_pais" class="select-form" name="pais" placeholder="País de residencia">
+                                        <option value="0">Selecciona un país</option>
+                                        <option value="1">Argentina</option>
+                                        <option value="2">Chile</option>
+                                        <option value="3">Brasil</option>
+                                        <option value="4">Colombia</option>
+                                        <option value="5">Ecuador</option>
+                                        <option value="6">Chile</option>
+                                        <option value="7">Bolivia</option>
+                                        <option value="8">Costa Rica</option>
+                                        <option value="9">Otro</option>
+                                    </select>
+                                    <span class="form-error">Debe seleccionar un país.</span>
+                                </div>
+                            </div>
+                            <div class="item-form item-completo">
+                                <input type="submit" name="submit" class="btn btn-submit" value="registrar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        <script type='text/javascript' src='assets/js/index.js' async defer></script>
+
+    </body>
+</html>
